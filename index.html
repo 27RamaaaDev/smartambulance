@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Mockup Smart Ambulance untuk akses bantuan medis yang mudah dipahami dan digunakan.">
+  <title>Smart Ambulance — Bantuan Medis Lebih Dekat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Smart Ambulance, beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="14" fill="currentColor"/><path d="M22 10v24M10 22h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="33" cy="11" r="4" fill="#F68172"/></svg>
+        </span>
+        <span class="brand-name">Smart<span>Ambulance</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#bantuan">Bantuan</a>
+      </nav>
+      <button class="header-call" type="button" data-call-preview><span class="phone-icon" aria-hidden="true">☎</span><span>Telepon 119</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> TANGGAP DARURAT, TANPA RIBET</div>
+          <h1>Bantuan medis,<br><span>lebih dekat.</span></h1>
+          <p class="hero-description">Saat keadaan darurat, langkah yang jelas bisa sangat berarti. Akses bantuan dan siapkan informasi penting dengan mudah.</p>
+          <div class="hero-actions">
+            <button class="button button-emergency" type="button" data-call-preview><span class="button-icon" aria-hidden="true">☎</span> Panggil 119 <span class="button-arrow" aria-hidden="true">↗</span></button>
+            <button class="button button-secondary" type="button" data-open-request><span class="button-icon button-plus" aria-hidden="true">＋</span> Minta ambulans</button>
+          </div>
+          <div class="hero-note"><span class="info-icon" aria-hidden="true">i</span><p>Dalam keadaan darurat, hubungi <strong>PSC 119</strong>. Mockup ini belum terhubung ke layanan ambulans.</p></div>
+        </div>
+
+        <div class="preview-wrap" aria-label="Pratinjau lokasi dan status ambulans simulasi">
+          <div class="preview-glow"></div>
+          <div class="map-card">
+            <div class="map-topline"><span class="map-heading"><span class="map-pin-small" aria-hidden="true">●</span> Area bantuan</span><span class="demo-label"><span></span> SIMULASI</span></div>
+            <div class="map-canvas" aria-hidden="true">
+              <div class="map-block block-one"></div><div class="map-block block-two"></div><div class="map-block block-three"></div><div class="map-block block-four"></div>
+              <div class="map-park"><span></span><span></span><span></span><span></span></div>
+              <svg class="map-route" viewBox="0 0 440 290" preserveAspectRatio="none"><path d="M74 236 C112 220 104 165 173 170 S214 112 273 133 S327 90 366 70" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/><path d="M74 236 C112 220 104 165 173 170 S214 112 273 133 S327 90 366 70" fill="none" stroke="#2584d7" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 8"/></svg>
+              <div class="map-road road-horizontal"></div><div class="map-road road-vertical"></div>
+              <div class="map-location location-home"><span>Lokasi Anda</span><i></i></div>
+              <div class="map-location location-ambulance"><span>Ambulans</span><i>✚</i></div>
+              <div class="map-label label-one">Jl. Melati</div><div class="map-label label-two">Taman Kota</div>
+            </div>
+            <div class="ambulance-status">
+              <div class="ambulance-symbol" aria-hidden="true"><svg viewBox="0 0 48 40" fill="none"><path d="M4 11a3 3 0 0 1 3-3h22v21H4V11Z" fill="currentColor"/><path d="M29 15h8l7 8v6H29V15Z" fill="currentColor"/><path d="M18 12v12M12 18h12" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><path d="M33 18v5h7l-4-5h-3Z" fill="#fff"/><circle cx="13" cy="31" r="4" fill="#173659" stroke="#fff" stroke-width="2"/><circle cx="36" cy="31" r="4" fill="#173659" stroke="#fff" stroke-width="2"/></svg></div>
+              <div class="status-copy"><strong>Ambulans menuju lokasi</strong><span>Pratinjau status perjalanan</span></div>
+              <div class="status-time"><strong>08</strong><span>mnt</span></div>
+            </div>
+            <div class="map-disclaimer">Data lokasi dan waktu pada peta hanya simulasi</div>
+          </div>
+          <div class="floating-badge badge-top"><span class="badge-check">✓</span><span><strong>Langkah jelas</strong><small>Mudah diikuti siapa saja</small></span></div>
+          <div class="floating-badge badge-bottom"><span class="badge-heart">♥</span><span><strong>Utamakan keselamatan</strong><small>Hubungi petugas darurat</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info" aria-label="Informasi singkat">
+      <div class="container quick-info-inner">
+        <div class="quick-info-item"><span class="quick-icon icon-red" aria-hidden="true">24</span><span><strong>Butuh bantuan segera?</strong><small>Layanan darurat medis PSC 119</small></span></div>
+        <span class="quick-divider" aria-hidden="true"></span>
+        <div class="quick-info-item"><span class="quick-icon icon-blue" aria-hidden="true">⌖</span><span><strong>Ingat lokasi Anda</strong><small>Sampaikan alamat dan patokan terdekat</small></span></div>
+        <span class="quick-divider" aria-hidden="true"></span>
+        <button class="quick-link" type="button" data-call-preview>Hubungi sekarang <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="layanan">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">LAYANAN KAMI</span><h2>Bantuan yang Anda perlukan</h2></div>
+          <p>Informasi ringkas untuk membantu Anda mengambil langkah berikutnya dengan tenang.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card service-primary">
+            <div class="service-icon service-icon-red" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M7 14a3 3 0 0 1 3-3h20v25H7V14Z" stroke="currentColor" stroke-width="2.5"/><path d="M30 20h7l5 7v9H30V20Z" stroke="currentColor" stroke-width="2.5"/><path d="M20 17v12M14 23h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="15" cy="37" r="4" fill="#fff" stroke="currentColor" stroke-width="2.5"/><circle cx="36" cy="37" r="4" fill="#fff" stroke="currentColor" stroke-width="2.5"/></svg></div>
+            <span class="service-tag">DARURAT</span>
+            <h3>Panggilan darurat</h3>
+            <p>Hubungi petugas untuk mendapatkan arahan dan bantuan medis darurat.</p>
+            <button class="service-link service-link-red" type="button" data-call-preview>Telepon PSC 119 <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-blue" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42s15-13 15-25a15 15 0 1 0-30 0c0 12 15 25 15 25Z" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="17" r="5" stroke="currentColor" stroke-width="2.5"/><path d="M15 31h18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <span class="service-tag service-tag-blue">INFORMASI</span>
+            <h3>Informasi lokasi</h3>
+            <p>Siapkan alamat, nama jalan, dan patokan agar lokasi lebih mudah ditemukan.</p>
+            <a class="service-link" href="#cara-kerja">Lihat panduan <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-green" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 7 39 13v10c0 9-6.5 15-15 19C16.5 38 9 32 9 23V13l15-6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="m17 24 5 5 10-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="service-tag service-tag-green">PERSIAPAN</span>
+            <h3>Siapkan informasi pasien</h3>
+            <p>Catat kondisi pasien dan nomor yang bisa dihubungi oleh petugas.</p>
+            <button class="service-link service-link-button" type="button" data-open-request>Siapkan sekarang <span aria-hidden="true">→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section section-pad" id="cara-kerja">
+      <div class="container steps-container">
+        <div class="steps-intro"><span class="section-kicker">CARA KERJA</span><h2>Tiga langkah saat membutuhkan bantuan</h2><p>Ikuti langkah sederhana ini dan sampaikan informasi dengan jelas kepada petugas.</p><button class="text-link" type="button" data-call-preview>Hubungi PSC 119 <span aria-hidden="true">↗</span></button></div>
+        <div class="steps-list">
+          <article class="step-item"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">☎</div><div><h3>Hubungi 119</h3><p>Sampaikan bahwa Anda membutuhkan bantuan medis darurat.</p></div></article>
+          <article class="step-item"><span class="step-number">02</span><div class="step-icon step-icon-location" aria-hidden="true">⌖</div><div><h3>Jelaskan lokasi dan kondisi</h3><p>Berikan alamat, patokan terdekat, dan kondisi pasien.</p></div></article>
+          <article class="step-item"><span class="step-number">03</span><div class="step-icon step-icon-check" aria-hidden="true">✓</div><div><h3>Ikuti arahan petugas</h3><p>Tetap tenang dan ikuti petunjuk yang diberikan melalui telepon.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section" id="bantuan">
+      <div class="container help-panel">
+        <div class="help-symbol" aria-hidden="true">✚</div>
+        <div><span class="section-kicker">KAMI SIAP MEMBANTU</span><h2>Jangan ragu untuk meminta bantuan.</h2><p>Jika situasinya darurat, segera hubungi layanan medis PSC 119.</p></div>
+        <button class="button button-emergency help-button" type="button" data-call-preview>Telepon 119 <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#beranda" aria-label="Smart Ambulance, kembali ke atas"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="14" fill="currentColor"/><path d="M22 10v24M10 22h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="33" cy="11" r="4" fill="#F68172"/></svg></span><span class="brand-name">Smart<span>Ambulance</span></span></a>
+      <p>Mockup layanan informasi bantuan medis yang dirancang agar mudah digunakan oleh semua orang.</p>
+      <div class="footer-right"><span>Dalam keadaan darurat</span><button type="button" data-call-preview>Hubungi PSC 119</button></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="currentYear">2026</span> Smart Ambulance</span><span>Antarmuka demo · Belum terhubung ke sistem ambulans</span></div>
+  </footer>
+
+  <div class="mobile-call-bar"><button type="button" data-call-preview><span aria-hidden="true">☎</span> Panggil 119</button><button type="button" data-open-request>Siapkan info</button></div>
+
+  <dialog class="request-dialog" id="requestDialog" aria-labelledby="dialogTitle">
+    <form class="request-form" id="requestForm">
+      <div class="dialog-header"><div><span class="section-kicker">FORMULIR DEMO</span><h2 id="dialogTitle">Siapkan informasi bantuan</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Tutup formulir">×</button></div>
+      <p class="dialog-description">Isi informasi berikut sebagai pratinjau. Data tidak dikirim ke petugas atau layanan ambulans.</p>
+      <label for="patientName">Nama pelapor</label>
+      <input id="patientName" name="patientName" autocomplete="name" placeholder="Nama Anda" required>
+      <label for="patientPhone">Nomor telepon yang bisa dihubungi</label>
+      <input id="patientPhone" name="patientPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Contoh: 0812 3456 7890" required>
+      <label for="patientLocation">Lokasi kejadian</label>
+      <textarea id="patientLocation" name="patientLocation" rows="2" placeholder="Alamat, nama jalan, atau patokan terdekat" required></textarea>
+      <label for="patientCondition">Kondisi pasien</label>
+      <select id="patientCondition" name="patientCondition" required>
+        <option value="" selected disabled>Pilih kondisi pasien</option>
+        <option>Kesulitan bernapas</option>
+        <option>Penurunan kesadaran</option>
+        <option>Kecelakaan atau cedera</option>
+        <option>Nyeri atau kondisi lain</option>
+      </select>
+      <div class="dialog-notice"><span aria-hidden="true">i</span><p>Untuk bantuan nyata, hubungi PSC 119 melalui telepon Anda.</p></div>
+      <button class="button button-emergency submit-button" type="submit">Lihat ringkasan demo <span aria-hidden="true">→</span></button>
+    </form>
+  </dialog>
+
+  <section class="result-toast" id="demoResult" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span class="result-check" aria-hidden="true">✓</span><div><strong>Ringkasan demo siap</strong><p id="resultMessage">Informasi ini belum dikirim ke layanan ambulans.</p></div><button type="button" id="dismissResult" aria-label="Tutup pemberitahuan">×</button>
+  </section>
+</body>
+</html>
