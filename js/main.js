@@ -29,6 +29,13 @@ document.querySelectorAll("[data-open-request]").forEach((button) => {
   });
 });
 
+document.querySelectorAll("[data-call-preview]").forEach((button) => {
+  button.addEventListener("click", () => {
+    resultMessage.textContent = "Mockup saja: panggilan tidak dilakukan. Untuk bantuan nyata, hubungi PSC 119 melalui telepon Anda.";
+    demoResult.hidden = false;
+  });
+});
+
 document.querySelector("[data-close-dialog]").addEventListener("click", () => requestDialog.close());
 
 requestDialog.addEventListener("click", (event) => {
@@ -46,7 +53,7 @@ patientPhone.addEventListener("input", () => {
 
 requestForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  resultMessage.textContent = "Ringkasan ini hanya pratinjau. Data tidak disimpan atau dikirim. Untuk bantuan nyata, hubungi PSC 119.";
+  resultMessage.textContent = "Ringkasan ini hanya pratinjau. Data tidak disimpan atau dikirim. Untuk bantuan nyata, hubungi PSC 119 melalui telepon Anda.";
   requestDialog.close();
   requestForm.reset();
   patientPhone.setCustomValidity("");
